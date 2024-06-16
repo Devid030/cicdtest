@@ -19,7 +19,7 @@ const Button: React.FC<ButtonProps> = ({
     "px-4 py-2 rounded font-medium transition-colors duration-300";
   const variantStyles = {
     contain: {
-      primary: "bg-blue-500 text-white hover:bg-blue-700",
+      primary: "bg-blue-600 text-white hover:bg-blue-700",
       secondary: "bg-gray-500 text-white hover:bg-gray-700",
       success: "bg-green-500 text-white hover:bg-green-700",
       error: "bg-red-500 text-white hover:bg-red-700",
