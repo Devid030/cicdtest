@@ -1,0 +1,19 @@
+{
+  "name": "monorepo-sample",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "start": "concurrently \"yarn workspace ms-ui-components watch\" \"yarn workspace frontend-client dev\" \"yarn workspace frontend-dashboard dev\"",
+    "start:client": "concurrently \"yarn workspace ms-ui-components watch\" \"yarn workspace frontend-client dev\"",
+    "start:dashboard": "concurrently \"yarn workspace ms-ui-components watch\" \"yarn workspace frontend-dashboard dev\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
